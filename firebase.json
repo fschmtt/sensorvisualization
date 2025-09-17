@@ -1,1 +1,41 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"sensorvisualization-a7126","appId":"1:453606565058:android:07f4693c1d6c2e3428075b","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"sensorvisualization-a7126","appId":"1:453606565058:ios:f193c883b08a903e28075b","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"macos":{"default":{"projectId":"sensorvisualization-a7126","appId":"1:453606565058:ios:4dbb784d393ba40528075b","uploadDebugSymbols":false,"fileOutput":"macos/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"sensorvisualization-a7126","configurations":{"android":"1:453606565058:android:07f4693c1d6c2e3428075b","ios":"1:453606565058:ios:f193c883b08a903e28075b","macos":"1:453606565058:ios:4dbb784d393ba40528075b","web":"1:453606565058:web:104ec0c31116425e28075b","windows":"1:453606565058:web:9b3019f909a1f04e28075b"}}}}}}
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "libelle-46e53",
+                    "appId": "1:500907750571:android:adc212437e93e3de84f3ee",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "ios": {
+                "default": {
+                    "projectId": "libelle-46e53",
+                    "appId": "1:500907750571:ios:af8ad538baceb4c084f3ee",
+                    "uploadDebugSymbols": false,
+                    "fileOutput": "ios/Runner/GoogleService-Info.plist"
+                }
+            },
+            "macos": {
+                "default": {
+                    "projectId": "libelle-46e53",
+                    "appId": "1:500907750571:ios:572325ce2cb3c37384f3ee",
+                    "uploadDebugSymbols": false,
+                    "fileOutput": "macos/Runner/GoogleService-Info.plist"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "libelle-46e53",
+                    "configurations": {
+                        "android": "1:500907750571:android:adc212437e93e3de84f3ee",
+                        "ios": "1:500907750571:ios:af8ad538baceb4c084f3ee",
+                        "macos": "1:500907750571:ios:572325ce2cb3c37384f3ee",
+                        "web": "1:500907750571:web:9a5bbb064347f05384f3ee",
+                        "windows": "1:500907750571:web:f08d8b869d7c3c9a84f3ee"
+                    }
+                }
+            }
+        }
+    }
+}
