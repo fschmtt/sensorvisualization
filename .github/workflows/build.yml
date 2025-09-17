@@ -64,60 +64,60 @@ jobs:
           name: windows
           path: windows-release.zip
 
-#  build-macos:
-#    name: Build macOS
-#    runs-on: macos-latest
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v4
-#
-#      - name: Setup Flutter
-#        uses: subosito/flutter-action@v2
-#        with:
-#          channel: 'stable'
-#
-#      - name: Enable macOS Desktop
-#        run: flutter config --enable-macos-desktop
-#
-#      - name: Install dependencies
-#        run: flutter pub get
-#
-#      - name: Build macOS
-#        run: flutter build macos --release
-#
-#      - name: Archive macOS build
-#        run: zip -r macos-release.zip build/macos/Build/Products/Release/*.app
-#
-#      - uses: actions/upload-artifact@v4
-#        with:
-#          name: macos
-#          path: macos-release.zip
-#
-#  build-ios:
-#    name: Build iOS
-#    runs-on: macos-latest
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v4
-#
-#      - name: Setup Flutter
-#        uses: subosito/flutter-action@v2
-#        with:
-#          channel: 'stable'
-#
-#      - name: Enable iOS
-#        run: flutter config --enable-ios
-#
-#      - name: Install dependencies
-#        run: flutter pub get
-#
-#      - name: Build iOS
-#        run: flutter build ios --release --no-codesign
-#
-#      - name: Archive iOS build
-#        run: zip -r ios-release.zip build/ios/iphoneos/*.app
-#
-#      - uses: actions/upload-artifact@v4
-#        with:
-#          name: ios
-#          path: ios-release.zip
+  build-macos:
+    name: Build macOS
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Enable macOS Desktop
+        run: flutter config --enable-macos-desktop
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build macOS
+        run: flutter build macos --release
+
+      - name: Archive macOS build
+        run: zip -r macos-release.zip build/macos/Build/Products/Release/*.app
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: macos
+          path: macos-release.zip
+
+  build-ios:
+    name: Build iOS
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Enable iOS
+        run: flutter config --enable-ios
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build iOS
+        run: flutter build ios --release --no-codesign
+
+      - name: Archive iOS build
+        run: zip -r ios-release.zip build/ios/iphoneos/*.app
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ios
+          path: ios-release.zip
