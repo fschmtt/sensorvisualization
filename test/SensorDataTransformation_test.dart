@@ -33,7 +33,7 @@ void main() {
   });
 
   test('test transformDateTimeToSecondsAsDouble', () {
-    DateTime dateTime = DateTime(2025, 2, 3, 10, 0, 0, 0, 0);
+    DateTime dateTime = DateTime.utc(2025, 2, 3, 10, 0, 0, 0, 0);
 
     double result = SensorDataTransformation.transformDateTimeToSecondsAsDouble(
       dateTime,
