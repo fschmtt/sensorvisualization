@@ -4,7 +4,6 @@ import 'package:sensorvisualization/data/settingsModels/SensorType.dart';
 import 'package:sensorvisualization/data/services/GlobalStartTime.dart';
 import 'package:sensorvisualization/data/services/SensorDataTransformation.dart';
 
-
 void main() {
   test('test transformSingleAbsoluteToRelativeValue', () {
     double absolute = 5.0;
@@ -31,13 +30,13 @@ void main() {
   });
 
   test('test transformDateTimeToSecondsAsDouble', () {
-    DateTime dateTime = DateTime.utc(2025, 2, 3, 10, 0, 0, 0, 0);
+    DateTime dateTime = DateTime.utc(2025, 2, 3, 10, 0, 0);
 
     double result = SensorDataTransformation.transformDateTimeToSecondsAsDouble(
       dateTime,
     );
 
-    expect(1738573200.0, result);
+    expect(result, 1738576800.0);
   });
 
   test('test transformAbsoluteToRelativeValues', () {
