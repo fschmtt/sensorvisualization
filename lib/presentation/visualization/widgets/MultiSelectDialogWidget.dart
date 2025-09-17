@@ -24,10 +24,10 @@ class SensorSelectionWithColor {
 
 class Multiselectdialogwidget extends StatefulWidget {
   const Multiselectdialogwidget({
-    Key? key,
+    super.key,
     required this.initialSelectedValues,
     this.initialSelectedColors = const {},
-  }) : super(key: key);
+  });
 
   final Map<String, Set<MultiSelectDialogItem>> initialSelectedValues;
   final Map<String, Map<MultiSelectDialogItem, Color>> initialSelectedColors;

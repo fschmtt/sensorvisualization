@@ -5,7 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 class LexikonDialog extends StatelessWidget {
   final List<LexikonEntry> entries;
 
-  LexikonDialog({required this.entries});
+  const LexikonDialog({super.key, required this.entries});
 
   @override
   Widget build(BuildContext context) {

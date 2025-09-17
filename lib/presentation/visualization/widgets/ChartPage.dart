@@ -4,7 +4,6 @@ import 'dart:io';
 import 'package:drift/drift.dart' hide Column;
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_launcher_icons/config/config.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:sensorvisualization/controller/visualization/SensorDataController.dart';
@@ -29,10 +28,7 @@ import 'package:sensorvisualization/presentation/visualization/widgets/WarningLe
 import 'package:tuple/tuple.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../data/settingsModels/ChartConfig.dart';
-import '../../../data/settingsModels/ColorSettings.dart';
-import 'package:sensorvisualization/data/services/ChartExporter.dart';
 import 'package:sensorvisualization/data/services/SensorDataSimulator.dart';
-import 'package:drift/drift.dart' as drift;
 import 'package:sensorvisualization/database/DatabaseOperations.dart';
 
 class ChartPage extends StatefulWidget {
@@ -74,7 +70,7 @@ class _ChartPageState extends State<ChartPage>
 
   late DateTime _startTime;
 
-  List<DateTime> _allDangerTimestamps = [];
+  final List<DateTime> _allDangerTimestamps = [];
 
   late SensorDataSimulator simulator;
   bool isSimulationRunning = false;

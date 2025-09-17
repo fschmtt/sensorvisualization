@@ -2,12 +2,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:mockito/annotations.dart';
-import 'package:sensors_plus/sensors_plus.dart';
-import 'dart:async';
 import 'package:sensorvisualization/controller/measurement/NullMeasurementController.dart';
 import 'package:sensorvisualization/data/services/client/SensorClient.dart';
 import 'package:sensorvisualization/data/services/client/ClientCommandHandler.dart';
-import 'package:sensorvisualization/model/measurement/MeasurementState.dart';
 import 'package:sensorvisualization/data/services/providers/SettingsProvider.dart';
 
 @GenerateMocks([SensorClient, ClientCommandHandler])

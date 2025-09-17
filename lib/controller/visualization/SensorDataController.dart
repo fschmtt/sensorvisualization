@@ -7,7 +7,6 @@ import 'package:sensorvisualization/data/settingsModels/MultiselectDialogItem.da
 import 'package:sensorvisualization/data/settingsModels/SensorOrientation.dart';
 import 'package:sensorvisualization/data/settingsModels/SensorType.dart';
 import 'package:sensorvisualization/data/services/SensorDataSimulator.dart';
-import 'package:sensorvisualization/data/services/providers/ConnectionProvider.dart';
 import 'package:sensorvisualization/data/services/providers/SettingsProvider.dart';
 import 'package:sensorvisualization/model/visualization/ChartConfigurationModel.dart';
 import 'package:sensorvisualization/model/visualization/VisualizationSensorDataModel.dart';

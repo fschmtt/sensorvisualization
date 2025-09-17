@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:typed_data';
 import 'dart:ui' as ui;
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -247,7 +246,7 @@ class ChartExporter {
                                 ),
                               ],
                             );
-                          }).toList(),
+                          }),
                         ],
                       ),
                     ),
@@ -276,10 +275,7 @@ class ChartExporter {
 
   pw.Widget _buildLegendEntry(
     String label,
-    PdfColor color, {
-    bool isDashed = false,
-    List<int>? dashPattern,
-  }) {
+    PdfColor color) {
     return pw.Container(
       margin: const pw.EdgeInsets.symmetric(vertical: 3),
       child: pw.Row(

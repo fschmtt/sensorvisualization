@@ -92,6 +92,9 @@ dev_dependencies:
 
 
 # The following section is specific to Flutter packages.
+  cloud_firestore_platform_interface: any
+  connectivity_plus_platform_interface: any
+  firebase_core_platform_interface: any
 flutter:
   assets:
     - visuals/Projekt_Libelle_Icon.png

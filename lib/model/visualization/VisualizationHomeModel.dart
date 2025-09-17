@@ -2,7 +2,6 @@ import 'package:sensorvisualization/data/settingsModels/ChartConfig.dart';
 import 'package:sensorvisualization/data/settingsModels/ChartTab.dart';
 import 'package:sensorvisualization/data/settingsModels/LexikonEntry.dart';
 import 'package:sensorvisualization/data/settingsModels/MultiselectDialogItem.dart';
-import 'package:sensorvisualization/presentation/visualization/dialogs/LexikonDialog.dart';
 import 'package:sensorvisualization/data/services/providers/SettingsProvider.dart';
 import 'package:sensorvisualization/fireDB/FirebaseOperations.dart';
 

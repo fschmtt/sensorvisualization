@@ -66,7 +66,7 @@ class SensorDataTransformation {
   static Map<String, dynamic> returnAbsoluteSensorDataAsJson(
     Map<String, dynamic> receivedJsonData,
   ) {
-    double? _parseToDouble(dynamic value) {
+    double? parseToDouble(dynamic value) {
       if (value == null) return null;
       if (value is double) return value;
       if (value is int) return value.toDouble();
@@ -85,7 +85,7 @@ class SensorDataTransformation {
             receivedJsonData['timestamp'] is String
                 ? DateTime.parse(receivedJsonData['timestamp'])
                 : receivedJsonData['timestamp'],
-        'pressure': _parseToDouble(receivedJsonData['pressure']),
+        'pressure': parseToDouble(receivedJsonData['pressure']),
       };
     } else {
       return {
@@ -98,9 +98,9 @@ class SensorDataTransformation {
             receivedJsonData['timestamp'] is String
                 ? DateTime.parse(receivedJsonData['timestamp'])
                 : receivedJsonData['timestamp'],
-        'x': _parseToDouble(receivedJsonData[SensorOrientation.x.displayName]),
-        'y': _parseToDouble(receivedJsonData[SensorOrientation.y.displayName]),
-        'z': _parseToDouble(receivedJsonData[SensorOrientation.z.displayName]),
+        'x': parseToDouble(receivedJsonData[SensorOrientation.x.displayName]),
+        'y': parseToDouble(receivedJsonData[SensorOrientation.y.displayName]),
+        'z': parseToDouble(receivedJsonData[SensorOrientation.z.displayName]),
       };
     }
   }

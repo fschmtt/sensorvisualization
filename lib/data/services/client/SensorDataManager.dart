@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:convert';
 
 import 'package:sensors_plus/sensors_plus.dart';
 import 'package:sensorvisualization/data/settingsModels/NetworkCommands.dart';

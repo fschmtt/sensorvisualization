@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../data/settingsModels/ChartConfig.dart';
 
 class ChartSelectorTabMulti extends StatelessWidget {
   final int selectedIndex;

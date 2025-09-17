@@ -9,10 +9,7 @@ import 'package:sensorvisualization/database/AppDatabase.dart';
 import 'package:sensorvisualization/database/DatabaseOperations.dart';
 import 'package:sensorvisualization/fireDB/FirebaseOperations.dart';
 import 'package:sensorvisualization/presentation/visualization/TabsHomeScreen.dart';
-import 'package:sensorvisualization/database/DatabaseOperations.dart';
 import 'package:sensorvisualization/fireDB/firebase_options.dart';
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -84,6 +81,8 @@ Future<void> _initializeNotifications() async {
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }

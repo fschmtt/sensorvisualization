@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sensorvisualization/data/settingsModels/ConnectionDisplayState.dart';
@@ -132,7 +131,7 @@ class _ConnectedDevicesDialogState extends State<ConnectedDevicesDialog> {
               Padding(
                 padding: const EdgeInsets.only(left: 8),
                 child: Text(
-                  remainingSeconds != null && remainingSeconds! >= 0
+                  remainingSeconds != null && remainingSeconds >= 0
                       ? "Noch $remainingSeconds s"
                       : "",
                   style: TextStyle(fontSize: 12, color: Colors.grey[700]),
@@ -156,7 +155,7 @@ class _ConnectedDevicesDialogState extends State<ConnectedDevicesDialog> {
 
   Icon _buildBatteryIcon(int? batteryLevel) {
     if (batteryLevel == null) return Icon(Icons.battery_unknown);
-    final rounded = (batteryLevel! / 10).floor();
+    final rounded = (batteryLevel / 10).floor();
 
     IconData icon;
     Color color;

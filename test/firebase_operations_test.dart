@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:mockito/annotations.dart';
@@ -11,10 +10,6 @@ import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:sensorvisualization/database/AppDatabase.dart';
 import 'package:sensorvisualization/database/DatabaseOperations.dart';
 import 'package:sensorvisualization/fireDB/FirebaseOperations.dart';
-import 'package:sensorvisualization/database/MetadataTable.dart';
-import 'package:sensorvisualization/database/SensorTable.dart';
-import 'package:sensorvisualization/database/NoteTable.dart';
-import 'package:sensorvisualization/database/IdentificationTable.dart';
 import 'package:drift/drift.dart' hide isNotNull, isNull;
 
 @GenerateMocks([
@@ -406,8 +401,8 @@ class TestableFirebasesync extends Firebasesync {
     try {
       await mockFirestore.collection('local_data').add({
         'name': metadata.name.value,
-        'createdAt': metadata.createdAt.value?.toIso8601String(),
-        'updatedAt': metadata.updatedAt.value?.toIso8601String(),
+        'createdAt': metadata.createdAt.value.toIso8601String(),
+        'updatedAt': metadata.updatedAt.value.toIso8601String(),
       });
       print('FakeFirestore: Metadata synced successfully.');
     } catch (e) {

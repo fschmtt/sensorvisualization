@@ -2,14 +2,11 @@
 
 import 'dart:convert';
 import 'dart:io';
-import 'package:drift/drift.dart';
 import 'package:sensorvisualization/data/settingsModels/NetworkCommands.dart';
 import 'package:tuple/tuple.dart';
 import 'package:sensorvisualization/data/settingsModels/ConnectionDisplayState.dart';
 import 'package:sensorvisualization/data/settingsModels/SensorType.dart';
 import 'package:sensorvisualization/data/settingsModels/SensorOrientation.dart';
-import 'package:sensorvisualization/database/AppDatabase.dart';
-import 'package:sensorvisualization/database/DatabaseOperations.dart';
 
 class ConnectionManager {
   final void Function()? onConnectionChanged;

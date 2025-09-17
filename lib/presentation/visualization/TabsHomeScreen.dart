@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sensorvisualization/presentation/measurement/QRScannerScreen.dart';
 
 import 'package:sensorvisualization/presentation/measurement/ScannerEntryScreen.dart';
 import 'package:sensorvisualization/presentation/visualization/VisualizationHomeScreen.dart';

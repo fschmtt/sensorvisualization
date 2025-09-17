@@ -3,9 +3,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 import 'package:sensorvisualization/data/services/client/SensorClient.dart';
-import 'package:sensorvisualization/database/AppDatabase.dart';
 import 'package:sensorvisualization/model/measurement/MeasurementState.dart';
-import 'package:sensorvisualization/model/measurement/NullMeasurementModel.dart';
 import 'package:sensorvisualization/model/measurement/MeasurementSensorDataModel.dart';
 
 class SensorMeasurementController extends ChangeNotifier {

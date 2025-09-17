@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
 import 'package:sensorvisualization/controller/measurement/AlarmController.dart';
 import 'package:sensorvisualization/data/services/client/SensorClient.dart';
@@ -9,10 +8,10 @@ class AlarmView extends StatelessWidget {
   final Function? onAlarmStopReceived;
 
   const AlarmView({
-    Key? key,
+    super.key,
     required this.connection,
     this.onAlarmStopReceived,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -1,11 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:sensorvisualization/controller/visualization/SensorDataController.dart';
-import 'package:sensorvisualization/data/settingsModels/ColorSettings.dart';
-import 'package:sensorvisualization/data/services/SensorDataTransformation.dart';
-import 'package:sensorvisualization/data/services/providers/ConnectionProvider.dart';
 import 'package:sensorvisualization/data/services/providers/SettingsProvider.dart';
 import 'package:sensorvisualization/data/settingsModels/MultiselectDialogItem.dart';
 import 'package:sensorvisualization/model/visualization/ChartConfigurationModel.dart';

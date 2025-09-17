@@ -151,8 +151,8 @@ class _SensorMeasurementViewState extends State<SensorMeasurementView> {
               ),
               SizedBox(height: 10),
               ElevatedButton(
-                child: const Text("Messung stoppen"),
                 onPressed: _showStopConfirmationDialog,
+                child: const Text("Messung stoppen"),
               ),
             ],
           ),

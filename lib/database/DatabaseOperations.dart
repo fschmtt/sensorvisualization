@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'dart:core';
 import 'dart:io';
 import 'package:csv/csv.dart';
@@ -6,12 +5,6 @@ import 'package:drift/drift.dart';
 import 'package:sensorvisualization/database/AppDatabase.dart';
 import 'package:sensorvisualization/fireDB/FirebaseOperations.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:file_picker/file_picker.dart';
-import 'dart:convert';
-import 'package:flutter/foundation.dart';
-import 'package:cross_file/cross_file.dart';
-import 'package:share_plus/share_plus.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
 class Databaseoperations {
